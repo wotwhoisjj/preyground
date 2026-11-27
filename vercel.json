@@ -26,5 +26,36 @@
       "framework": "express"
     }
   },
-  "rewrites": []
+  "rewrites": [
+  {
+    "source": "/attacker/:path*",
+    "destination": {
+      "service": "attacker"
+    }
+  },
+  {
+    "source": "/sql/:path*",
+    "destination": {
+      "service": "sql_injection"
+    }
+  },
+  {
+    "source": "/xss/attacker/:path*",
+    "destination": {
+      "service": "xss-attacker"
+    }
+  },
+  {
+    "source": "/xss/victim/:path*",
+    "destination": {
+      "service": "xss-victim"
+    }
+  },
+  {
+    "source": "/:path*",
+    "destination": {
+      "service": "victim"
+    }
+  }
+]
 }
