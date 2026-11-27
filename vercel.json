@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "attacker": {
+      "root": "client_side_xorigin/attacker",
+      "framework": "express"
+    },
+    "victim": {
+      "root": "client_side_xorigin/victim",
+      "framework": "express"
+    },
+    "sql_injection": {
+      "root": "sql_injection",
+      "framework": "flask"
+    },
+    "attacker-2": {
+      "root": "xss/attacker",
+      "framework": "express"
+    },
+    "bot": {
+      "root": "xss/bot",
+      "runtime": "container"
+    },
+    "victim-2": {
+      "root": "xss/victim",
+      "framework": "express"
+    }
+  },
+  "rewrites": []
+}
