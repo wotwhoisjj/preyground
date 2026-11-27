@@ -13,7 +13,7 @@
       "root": "sql_injection",
       "framework": "flask"
     },
-    "attacker-2": {
+    "xss-attacker": {
       "root": "xss/attacker",
       "framework": "express"
     },
@@ -21,7 +21,7 @@
       "root": "xss/bot",
       "runtime": "container"
     },
-    "victim-2": {
+    "xss-victim": {
       "root": "xss/victim",
       "framework": "express"
     }
